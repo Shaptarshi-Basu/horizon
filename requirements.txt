@@ -9,6 +9,7 @@
 # PBR should always appear first
 pbr==1.8.1
 # Horizon Core Requirements
+six==1.11.0
 Babel==2.1.1
 Django==1.7
 django-nocaptcha-recaptcha==0.0.18
@@ -41,7 +42,6 @@ python-saharaclient==0.7.6
 python-swiftclient==2.3.1
 python-troveclient==1.0.8
 pytz==2014.10
-six
 XStatic==1.0.1 # MIT License
 XStatic-Angular-Cookies==1.2.1.1  # MIT License
 XStatic-Angular-Mock==1.2.1.1  # MIT License
