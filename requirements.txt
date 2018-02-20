@@ -9,7 +9,6 @@
 # PBR should always appear first
 pbr==1.8.1
 # Horizon Core Requirements
-six==1.11.0
 Babel==2.1.1
 Django==1.7
 django-nocaptcha-recaptcha==0.0.18
