@@ -123,7 +123,7 @@ class InstallVenv(object):
         print("**************************BEFORE INSTALLING SETUPTOOLS********************************************")
         self.pip_install('setuptools')
         print("**************************AFTER INSTALLING PIP********************************************")
-        self.pip_install('pbr six')
+        self.pip_install('pbr')
         print("**************************AFTER INSTALLING PBR********************************************")
         #subprocess.call(["sudo", "-H","pip","install","six"])
         #subprocess.call(["sudo", "-H","pip","install","six"])
