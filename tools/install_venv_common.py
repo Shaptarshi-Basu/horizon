@@ -116,7 +116,9 @@ class InstallVenv(object):
         self.pip_install('pip')
         self.pip_install('setuptools')
         self.pip_install('pbr')
-        self.pip_install('six')
+        #subprocess.call(["sudo", "-H","pip","install","six"])
+        subprocess.call(["sudo", "-H","pip","install","six"])
+        #self.pip_install('six')
         self.pip_install('-r', self.requirements, '-r', self.test_requirements)
 
     def parse_args(self, argv):
