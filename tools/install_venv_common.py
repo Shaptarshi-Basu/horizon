@@ -68,6 +68,7 @@ class InstallVenv(object):
         return (output, proc.returncode)
 
     def run_command(self, cmd, redirect_output=True, check_exit_code=True):
+        print("**************************IN RUN_COMMAND********************************************")
         return self.run_command_with_code(cmd, redirect_output,
                                           check_exit_code)[0]
 
@@ -104,9 +105,11 @@ class InstallVenv(object):
             pass
 
     def pip_install(self, *args):
+        print("**************************BEFORE PIP_INSTALLING********************************************")
         self.run_command(['tools/with_venv.sh',
                          'pip', 'install', '--upgrade'] + list(args),
                          redirect_output=False)
+        print("**************************AFTER PIP_INSTALLING********************************************")
 
     def install_dependencies(self):
         print('Installing dependencies with pip (this can take a while)...')
