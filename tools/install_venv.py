@@ -46,6 +46,7 @@ def print_help(venv, root):
 
 
 def main(argv):
+    print("**************************Its in main******************************")
     root = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
 
     if os.environ.get('tools_path'):
