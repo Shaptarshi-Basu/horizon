@@ -124,7 +124,7 @@ class InstallVenv(object):
         self.pip_install('setuptools')
         print("**************************AFTER INSTALLING PIP********************************************")
         self.pip_install('pbr')
-        self.pip_install('django-angular')
+        #self.pip_install('django-angular')
         print("**************************AFTER INSTALLING PBR********************************************")
         #subprocess.call(["sudo", "-H","pip","install","six"])
         #subprocess.call(["sudo", "-H","pip","install","six"])
