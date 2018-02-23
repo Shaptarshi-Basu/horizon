@@ -120,6 +120,7 @@ class InstallVenv(object):
         self.pip_install('pip')
         print("**************************AFTER INSTALLING PIP********************************************")
         self.pip_install('six')
+        self.pip_install('django-angular')
         print("**************************BEFORE INSTALLING SETUPTOOLS********************************************")
         self.pip_install('setuptools')
         print("**************************AFTER INSTALLING PIP********************************************")
