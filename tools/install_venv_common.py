@@ -113,14 +113,21 @@ class InstallVenv(object):
 
         # First things first, make sure our venv has the latest pip and
         # setuptools and pbr
+        print("**************************BEFORE INSTALLING PIP********************************************")
         self.pip_install('pip')
+        print("**************************AFTER INSTALLING PIP********************************************")
         self.pip_install('six')
+        print("**************************BEFORE INSTALLING SETUPTOOLS********************************************")
         self.pip_install('setuptools')
+        print("**************************AFTER INSTALLING PIP********************************************")
         self.pip_install('pbr six')
+        print("**************************AFTER INSTALLING PBR********************************************")
         #subprocess.call(["sudo", "-H","pip","install","six"])
         #subprocess.call(["sudo", "-H","pip","install","six"])
         #self.pip_install('six')
+        print("**************************BEFORE INSTALLING REQUIREMENTS********************************************")
         self.pip_install('-r', self.requirements, '-r', self.test_requirements)
+        print("**************************AFTER INSTALLING REQUIREMENTS********************************************")
 
     def parse_args(self, argv):
         """Parses command-line arguments."""
