@@ -124,14 +124,14 @@ class InstallVenv(object):
         self.pip_install('setuptools')
         print("**************************AFTER INSTALLING PIP********************************************")
         self.pip_install('pbr')
+        self.pip_install('django-angular')
         print("**************************AFTER INSTALLING PBR********************************************")
         #subprocess.call(["sudo", "-H","pip","install","six"])
         #subprocess.call(["sudo", "-H","pip","install","six"])
         #self.pip_install('six')
         print("**************************BEFORE INSTALLING REQUIREMENTS********************************************")
         self.pip_install('-r', self.requirements, '-r', self.test_requirements)
-        print("**************************AFTER INSTALLING REQUIREMENTS********************************************")
-
+        print("**************************AFTER INSTALLING REQUIREMENTS************************django-angular********************")
     def parse_args(self, argv):
         """Parses command-line arguments."""
         parser = optparse.OptionParser()
